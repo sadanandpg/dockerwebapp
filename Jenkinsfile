@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     gv.buildApp()
-                    sh "docker build -t mynodejs ."
+                    sh 'docker build -t mynodejs .'
                     echo ' build docker images the application...'
                 }
             }
